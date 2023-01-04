@@ -17,20 +17,23 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.(js|jsx|tsx|ts)$/,
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          loader: 'ts-loader'
+         },
+        {
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
             options: {
               presets: [
                 '@babel/preset-env',
-                '@babel/preset-react',
-                '@babel/preset-typescript',
+                '@babel/preset-react'
               ],
             },
           },
         },
-        
         {
             test: /\.(png|jpg|gif|svg|woff2|ttf|woff|eot)$/,
             use: [

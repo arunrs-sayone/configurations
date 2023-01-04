@@ -10,7 +10,7 @@ function App() {
 
   const user: User = {
     name: "Hayes",
-    id: "Hayes"
+    id: 123
   };
 
   return (

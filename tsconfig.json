@@ -1,26 +1,19 @@
 {
-    "compilerOptions": {
-      "allowSyntheticDefaultImports": true,
-      "jsx": "react",
-      "module": "amd",
-      "noImplicitAny": true,
-      "outDir": "./dist/",
-      "preserveConstEnums": true,
-      "removeComments": true,
-      "sourceMap": true,
-      "target": "es6",
-      "allowJs": false,
-      "moduleResolution": "node",
-      "strict": true,
-      "alwaysStrict": true,
-      "strictNullChecks": false,
-      "downlevelIteration": true,
-      "noEmit": false,
-    },
-    "include": [
-      "./src/"
-    ],
-    "exclude": [
-      "node_modules"
-    ]
-  }
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node"
+  },
+  "include": [
+    "./src/"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
