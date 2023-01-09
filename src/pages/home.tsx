@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Home = () => {
-    return(
-        <>
-         Home
-        </>
-    )
-}
+const Home: React.FC = () => {
+  const [state, setstate] = useState("");
 
-export default Home
+  const handleclick = () => {
+    const name = "string";
+    setstate(name);
+  };
+
+  return <div onClick={handleclick}>Home</div>;
+};
+
+export default Home;
