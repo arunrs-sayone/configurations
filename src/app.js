@@ -1,8 +1,6 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useState } from "react"
 
 const Home = React.lazy(() => import('pages/home'));
-
-
 
 
 const App = () => {
@@ -18,7 +16,7 @@ const App = () => {
     name:'Arun'
   }
 
-  const messsage = (name) => {
+  const messsage  = (name) => {
     return (`hello ${name}`)
   }
 
