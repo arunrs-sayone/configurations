@@ -2,13 +2,16 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
     "target": "es5",
     "jsx": "react",
     "sourceMap": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "alwaysStrict":true,
+    "noImplicitReturns":true,
+    "noUnusedParameters":true
   },
   "include": [
     "./src/"
@@ -17,3 +20,5 @@
     "node_modules"
   ]
 }
+
+
