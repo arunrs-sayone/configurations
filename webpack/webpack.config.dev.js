@@ -11,6 +11,9 @@ module.exports = merge(common, {
 			path: Path.resolve(__dirname, '../.env')
 		}),
   ],
+  devServer: {
+    historyApiFallback: true, //route refresh fallback in devserver
+  },
   module:{
     rules: [
       {
